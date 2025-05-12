@@ -1,0 +1,25 @@
+.links {
+    display: flex;
+    list-style-type: none; /* Remove o marcador da lista */
+    gap: 16px; /* Espaço entre os itens */
+    margin-left: auto; /* Empurra os links para a direita */
+    padding: 0; /* Remove o padding padrão */
+    padding-right: 32px; /* Adiciona um padding à direita */
+}
+.links a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #f9faf8; /* Cor do texto */
+    display: flex;
+     list-style-type: none; /* Remove o marcador da lista */
+      gap: 16px; /* Espaço entre os itens */
+     
+}
+.header {
+    background: #1f2937;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 8px; 
+}
