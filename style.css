@@ -1,10 +1,16 @@
+body {
+    margin: 0;
+    background: #f3f4f6; /* Cor de fundo */
+    font-family: roboto; /* Fonte personalizada */
+}
+
 .links {
     display: flex;
     list-style-type: none; /* Remove o marcador da lista */
     gap: 16px; /* Espaço entre os itens */
     margin-left: auto; /* Empurra os links para a direita */
     padding: 0; /* Remove o padding padrão */
-    padding-right: 32px; /* Adiciona um padding à direita */
+      align-items: flex-start;
 }
 .links a {
     text-decoration: none; /* Remove o sublinhado */
@@ -15,11 +21,81 @@
      
 }
 .header {
-    background: #1f2937;
+   background: #1f2937;
+   text-align: center;
     border-bottom: 1px solid #ddd;
-    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    padding: 0 40px; /* Remove o espaçamento vertical e mantém o horizontal */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between; /* Espaça os itens */
+    align-items: center; /* Alinha verticalmente */
+    padding: 20px 40px; /* Espaçamento interno */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+       margin-top: 0
+    
+ }
+.title {
+    margin: 0;
+    font-size: 2rem; /* Ajusta o tamanho do título */
+}
+.hero {
+    background: #1f2937;
+    color: #f9faf8;
+    padding: 40px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Centraliza os itens verticalmente */
-    padding: 8px; 
+    align-items: center;
+    gap: 20px;
+}
+
+.hero img {
+    max-width: 250px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* (Opcional) Adiciona bordas arredondadas */
+}
+.subtitle {
+    margin: 0;
+    font-size: 1.5rem; /* Ajusta o tamanho do subtítulo */
+}
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    max-width: 100%;      /* Garante que ele não ultrapasse */
+    word-wrap: break-word; /* Força quebra se necessário */
+}
+.signup-btn {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 160px;
+}
+.text-content, .hero-image {
+    flex: 1;
+    max-width: 50%;
+}
+.subtitle {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal; /* Remove o negrito */
+    color: #f9faf8;
+    line-height: 1.4;
+    max-width: 100%;
+    word-break: break-word;
 }
