@@ -6,11 +6,10 @@ body {
 
 .links {
     display: flex;
-    list-style-type: none; /* Remove o marcador da lista */
-    gap: 16px; /* Espaço entre os itens */
-    margin-left: auto; /* Empurra os links para a direita */
-    padding: 0; /* Remove o padding padrão */
-      align-items: flex-start;
+    list-style-type: none; /* Remove os marcadores da lista */
+    gap: 16px; /* Espaço entre os links */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
 }
 .links a {
     text-decoration: none; /* Remove o sublinhado */
@@ -23,25 +22,26 @@ body {
 .header {
    background: #1f2937;
    text-align: center;
-    border-bottom: 1px solid #ddd;
     box-shadow: 0 0 8px rgba(0, 0, 0, .1);
     padding: 0 40px; /* Remove o espaçamento vertical e mantém o horizontal */
 }
 
-.navbar{
+.navbar {
     display: flex;
-    justify-content: space-between; /* Espaça os itens */
-    align-items: center; /* Alinha verticalmente */
-    padding: 20px 40px; /* Espaçamento interno */
+    justify-content: space-between; /* Espaça os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 0 40px; /* Espaçamento interno horizontal */
+    height: 60px; /* Define uma altura fixa para o cabeçalho */
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 100px;
-       margin-top: 0
+    margin-right: 50px;
+    gap: 10px;
+    margin-top: 0
     
- }
+}
 .title {
     margin: 0;
     font-size: 2rem; /* Ajusta o tamanho do título */
@@ -88,4 +88,18 @@ body {
     line-height: 1.4;
     max-width: 100%;
     word-break: break-word;
+}
+h1 {
+    font-size: 2rem; /* Ajusta o tamanho do título */
+    color: button;
+    margin: 0;
+    text-align: center;
+}
+.main-cont {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: flex-start; /* Alinha as imagens ao topo */
+    gap: 5px; /* Espaço entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha, se necessário */
+    margin-top: 20px; /* Espaçamento acima do contêiner */
 }
