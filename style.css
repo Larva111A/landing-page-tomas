@@ -3,6 +3,16 @@ body {
     background: #f3f4f6; /* Cor de fundo */
     font-family: roboto; /* Fonte personalizada */
 }
+button {
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    color: #f9faf8; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+    padding: 0; /* Remove o padding padrão */
+}
+
 
 .links {
     display: flex;
@@ -15,13 +25,12 @@ body {
     text-decoration: none; /* Remove o sublinhado */
     color: #f9faf8; /* Cor do texto */
     display: flex;
-     list-style-type: none; /* Remove o marcador da lista */
-      gap: 16px; /* Espaço entre os itens */
-     
+    list-style-type: none; /* Remove o marcador da lista */
+    gap: 16px; /* Espaço entre os itens */ 
 }
 .header {
-   background: #1f2937;
-   text-align: center;
+    background: #1f2937;
+    text-align: center;
     box-shadow: 0 0 8px rgba(0, 0, 0, .1);
     padding: 0 40px; /* Remove o espaçamento vertical e mantém o horizontal */
 }
@@ -30,7 +39,7 @@ body {
     display: flex;
     justify-content: space-between; /* Espaça os itens horizontalmente */
     align-items: center; /* Alinha os itens verticalmente */
-    padding: 0 40px; /* Espaçamento interno horizontal */
+    padding: 0 30px; /* Espaçamento interno horizontal */
     height: 60px; /* Define uma altura fixa para o cabeçalho */
 }
 
@@ -42,14 +51,26 @@ body {
     margin-top: 0
     
 }
+/*Estilo do titulo do this website*/
 .title {
     margin: 0;
     font-size: 2rem; /* Ajusta o tamanho do título */
 }
+/* Estilo do texto do subtítulo */
+.subtitle {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal; /* Remove o negrito */
+    color: #f9faf8;
+    line-height: 1.4;
+    max-width: 100%;
+    word-break: break-word;
+}
+/*Estilos e espaçamentios do hero*/
 .hero {
     background: #1f2937;
     color: #f9faf8;
-    padding: 40px 20px;
+    padding: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,13 +82,8 @@ body {
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 8px; /* (Opcional) Adiciona bordas arredondadas */
 }
-.subtitle {
-    margin: 0;
-    font-size: 1.5rem; /* Ajusta o tamanho do subtítulo */
-}
-.text-content {
-    text-align: center;    /* Força quebra se necessário */
-}
+
+/*Estilo do botão de login*/
 .signup-btn {
     background-color: #3882F6;
     color: #F9FAF8;
@@ -80,26 +96,86 @@ body {
     margin-top: 10px;
     width: 160px;
 }
-.subtitle {
-    margin: 0;
-    font-size: 18px;
-    font-weight: normal; /* Remove o negrito */
-    color: #f9faf8;
-    line-height: 1.4;
-    max-width: 100%;
-    word-break: break-word;
-}
-h1 {
+
+/*Estilo do titulo somerand*/
+.somerand { 
+    padding: 20px;
     font-size: 2rem; /* Ajusta o tamanho do título */
     color: button;
     margin: 0;
     text-align: center;
 }
-.main-cont {
+/*Colocar as imagens lado a lado */
+.img {
     display: flex;
     justify-content: center; /* Centraliza as imagens horizontalmente */
     align-items: flex-start; /* Alinha as imagens ao topo */
-    gap: 5px; /* Espaço entre os itens */
+    gap: 75px; /* Espaço entre os itens */
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha, se necessário */
-    margin-top: 20px; /* Espaçamento acima do contêiner */
+    margin-top: 100px; /* Espaçamento acima do contêiner */
+    text-align: center; /*centralizar o texto*/
+    
+}
+/* Estilo do texto que começa com this e tem o thor */
+.texto{
+    background-color: #E5E6EB;
+    padding: 20px;
+}
+/*Estilo do texto que começa com this */
+.this{
+    font-size: 36px; /* Ajusta o tamanho do título */
+    color: #1F2937;
+    text-align: center;
+    font-family: Quote;
+    font-style: italic;
+    width: 60%;
+    margin: 20px auto;
+}
+/*Estilo do texto do Thor */
+.thor{
+    font-size: 24px; /* Ajusta o tamanho do título */
+    color: #1F2937;
+    text-align: right;
+    font-family: Quote;
+    font-style: bold;
+
+    width: 60%;
+    margin: 20px auto;
+}
+/*Retangulo azul*/
+.quadrado {
+background-color: #3882F6; /* Define a cor de fundo do elemento como azul (#3882F6). */
+color: white; /* Define a cor do texto como branco. */
+padding: 40px 60px; /* Adiciona espaçamento interno (padding): 40px em cima e embaixo, 60px à esquerda e à direita. */
+border-radius: 10px; /* Arredonda os cantos do elemento com um raio de 10px. */
+display: flex; /* Ativa o layout flexível para o conteúdo interno. */
+justify-content: space-between; /* Distribui os itens internos com espaço igual entre eles. */
+align-items: center; /* Alinha os itens internos verticalmente ao centro do contêiner. */
+max-width: 950px; /* Limita a largura máxima do elemento a 1000px. */
+margin: 50px auto; /* Adiciona margem de 50px em cima e embaixo; `auto` centraliza o elemento horizontalmente. */
+flex-wrap: wrap; /* Permite que os itens internos quebrem linha se não couberem na mesma linha. */
+gap: 20px; /* Adiciona um espaçamento de 20px entre os itens internos (em ambas as direções, linha e coluna). */
+
+}
+/*Botão azul*/
+button.sign  {
+background-color: transparent;
+color: white;
+border: 2px solid white; /* borda do botão */
+padding: 8px 25px;/* espaço interno do botão */
+border-radius: 6px;/* colocar as bordas do botão arredondadas */
+font-size: 1rem; /*tamanho do botão*/
+cursor: pointer;/* cursor recebe meio que uma animação ao passar por cima */
+}
+/*Alingamento do texto que começa com call e que tem o sing */
+h1.call, h2.sign {
+text-align: left;
+}
+/*estilo da frase final da página*/
+.fim {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #202c34;
+    color: white;
 }
